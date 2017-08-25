@@ -3,6 +3,7 @@
  *
  * Define a an object below with the name "LivingThing".
  * Give the object a constructor that takes two properties called "name" and "health".
+
  *
  * Once you have your object defined, let's create some living things.
  * Create three LivingThing instances from your object, one for each of the creatures below.
@@ -33,8 +34,16 @@
     ///////////////////////////
     // Put your code here!
     ///////////////////////////
+function LivingThing(name, health){
+  this.name = name;
+  this.health = health;
+}
 
-    
+let rat =new LivingThing("Rat", 5);
+let goblin =new LivingThing("Goblin", 30);
+let ogre = new LivingThing("Ogre", 80);
+
+let monsters =[ rat, goblin, ogre]
     //The code below should work when you are done
     console.log("Monsters!");
 
@@ -58,7 +67,3 @@
     }
 
 })();
-    
-
-
-    
